@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DB Dump Editor</title>
+    <script src="code.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top" onload="onload();">
+    <div id="topDiv">
+        <label for="inputDumpName">Dump name:</label>
+        <input id="inputDumpName" type="text" />
+        <button onclick="load();">Load</button>
+
+        <label id="labelStatus"></label>
+    </div>
+
+    <div id="dataNode"></div>
+</body>
+</html>
+

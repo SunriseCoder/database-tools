@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+
+    color: white;
+    background-color: black;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+#topDiv {
+    position: fixed;
+    color: white;
+    background-color: black;
+    top: 3px;
+}
+
+#dataNode {
+    flex-direction: column;
+    margin-top: 3em;
+}
+
+.tableContainer {
+    display: flex;
+    flex-direction: row;
+
+    border-style: dashed;
+    border-width: 1px;
+
+    margin-bottom: 1em;
+
+    width: fit-content;
+}
+
+.tableTable {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.tableName {
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+
+    text-align: center;
+}
+
+.tableTable td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
