@@ -1,0 +1,84 @@
+{
+	"name": "test1",
+	"tables": [
+		{
+			"name": "companies",
+			"columns": [
+				{
+					"name": "id",
+					"type": "int8",
+					"size": 19,
+					"nullable": false
+				},
+				{
+					"name": "name",
+					"type": "text",
+					"size": 29,
+					"nullable": false
+				}
+			]
+		},
+		{
+			"name": "departments",
+			"columns": [
+				{
+					"name": "id",
+					"type": "int8",
+					"size": 19,
+					"nullable": false
+				},
+				{
+					"name": "company_id",
+					"type": "int8",
+					"size": 19,
+					"nullable": false
+				},
+				{
+					"name": "name",
+					"type": "text",
+					"size": 29,
+					"nullable": false
+				}
+			]
+		},
+		{
+			"name": "employees",
+			"columns": [
+				{
+					"name": "id",
+					"type": "int8",
+					"size": 19,
+					"nullable": false
+				},
+				{
+					"name": "department_id",
+					"type": "int8",
+					"size": 19,
+					"nullable": false
+				},
+				{
+					"name": "name",
+					"type": "text",
+					"size": 29,
+					"nullable": false
+				}
+			]
+		}
+	],
+	"foreignKeys": [
+		{
+			"name": "fk5011nbln4gk10c8ehsq7lyoeq",
+			"sourceTable": "departments",
+			"sourceColumn": "company_id",
+			"targetTable": "companies",
+			"targetColumn": "id"
+		},
+		{
+			"name": "fk5011nblnqlwekv8ehsq7lyoeq",
+			"sourceTable": "employees",
+			"sourceColumn": "department_id",
+			"targetTable": "departments",
+			"targetColumn": "id"
+		}
+	]
+}
