@@ -26,4 +26,13 @@ public class JDBCUtils {
             System.out.println();
         }
     }
+
+    public static String getIdValue(ResultSet resultSet, String idColumnName) {
+        try {
+            int idColumnIndex = resultSet.findColumn(idColumnName);
+            return resultSet.getString(idColumnIndex);
+        } catch (SQLException e) {
+            return null;
+        }
+    }
 }
